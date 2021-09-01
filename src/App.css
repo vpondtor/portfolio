@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+/* If the viewport is less than 1000px then I want to switch to the vertical layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+p {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.vertical-align {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+}
+
+.content {
+  width: 55%;
+  padding: 2em 3em 3em 5em;
+  animation: fadein 1.35s;
+  -moz-animation: fadein 1.35s; /* Firefox */
+  -webkit-animation: fadein 1.35s; /* Safari and Chrome */
+  -o-animation: fadein 1.35s; /* Opera */
+  animation-timing-function: ease-in;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Cat image from https://www.pinclipart.com/downpngs/ommxwi_nyan-balloon-w-fireworks-cartoon-cat-gif-no/ */
+#about {
+  flex: 3;
+  height: 100vh;
+  position: relative;
+  background-image: url(./images/cat_balloon.png);
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: 83% 50%;
+  animation: animatedBackground 3s ease-in-out infinite;
+}
+
+@keyframes animatedBackground {
+  0%, 100% {
+    background-position: 83% 45%;
+  } 50% {
+    background-position: 83% 50%;
+  }
+}
+
+.intro {
+  color: black;
+  font-size: 3em;
+  text-align: left;
+  margin: 0px 0px 0px 6%;
+}
+
+#projects {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#entries {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-bottom: 0px;
+}
+
+.entry {
+  flex: 1;
+  flex-basis: 40%;
+  height: 150px;
+  padding: 1em;
+  margin: 1.5em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.entry:hover {
+  box-shadow: 0px 5px 15px rgba(211, 32, 218, 0.75);
+}
+
+ul {
+  list-style-type: none;
+}
+
+#contact {
+  flex: 1;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.section_title {
+  padding: 2em 0em 0em 2em;
+}
