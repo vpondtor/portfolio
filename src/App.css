@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
 /* If the viewport is less than 1000px then I want to switch to the vertical layout */
 .app {
   display: flex;
@@ -9,6 +9,11 @@
 
 p {
   font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+}
+
+b {
+  font-weight: 400;
 }
 
 .vertical-align {
@@ -65,6 +70,7 @@ p {
   flex: 3;
   height: 100vh;
   position: relative;
+  /* background-color: #fdf4d6; */
   background-image: url(./images/cat_balloon.png);
   background-size: auto auto;
   background-repeat: no-repeat;
@@ -93,12 +99,13 @@ p {
 }
 
 #entries {
-  padding: 1em;
+  /* padding: 1em 1em 1em 1em; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -106,16 +113,17 @@ p {
   flex: 1;
   flex-basis: 40%;
   height: 150px;
-  padding: 1em;
+  padding: 1.4em 1.75em;
   margin: 1.5em;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out, transform 0.3s ease-in;
 }
 
 .entry:hover {
-  box-shadow: 0px 5px 15px rgba(211, 32, 218, 0.75);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.006);
 }
 
 ul {
@@ -124,10 +132,33 @@ ul {
 
 #contact {
   flex: 1;
-  padding: 1em;
   background-color: rgba(0, 0, 0, 0.1);
+  height: 150px;
 }
 
 .section_title {
-  padding: 2em 0em 0em 2em;
+  padding: 0.75em 0em 0em 1.5em;
+  font-size: 1.85em;
+  font-weight: 500;
+  color: rgba(121,186,255,255);
+}
+
+.entry_header {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: rgba(121,186,255,255);
+}
+
+.entry_about {
+  font-size: 0.95em;
+}
+
+.contact-container {
+  display: flex;
+  padding: 0em 10em;
+}
+
+.contact-entry {
+  flex: 1;
+  text-align: center;
 }

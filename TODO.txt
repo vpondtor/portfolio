@@ -1,2 +1,3 @@
 1. Make the background a more cream color
 2. Fade-in words
+3. Make it mobile friendly
