@@ -1,12 +1,14 @@
 import './App.css';
-import About from './About';
+import Intro from './Intro';
 import Contact from './Contact';
-import Projects from './Projects';
+import Featured from './Featured';
+import Projects from './Projects'
 
 function App() {
   return <div id="app">
-    <About></About>
-    <Projects></Projects>
+    <Intro></Intro>
+    {/* <Projects></Projects> */}
+    <Featured></Featured>
     <Contact></Contact>
   </div>;
 }

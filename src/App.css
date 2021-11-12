@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
 /* If the viewport is less than 1000px then I want to switch to the vertical layout */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -17,8 +23,8 @@ b {
 }
 
 .vertical-align {
-  position: absolute;
-  top: 30%;
+  position: relative;
+  top: 20%;
   text-align: center;
 }
 
@@ -67,22 +73,53 @@ b {
 
 /* Cat image from https://www.pinclipart.com/downpngs/ommxwi_nyan-balloon-w-fireworks-cartoon-cat-gif-no/ */
 #about {
+  font-size: 1.2vw;
   flex: 3;
   height: 100vh;
   position: relative;
   /* background-color: #fdf4d6; */
   background-image: url(./images/cat_balloon.png);
-  background-size: auto auto;
+  background-size: 20% auto;
   background-repeat: no-repeat;
-  background-position: 83% 50%;
-  animation: animatedBackground 3s ease-in-out infinite;
+  animation: animatedBackground 2s ease-in-out infinite;
+}
+
+@media (max-width: 400px) {
+  #about {
+    font-size: 1.6vw;
+    flex: 3;
+    height: 100vh;
+    position: relative;
+    /* background-color: #fdf4d6; */
+    background-image: url(./images/cat_balloon.png);
+    background-size: 30% auto;
+    background-repeat: no-repeat;
+    animation: animatedBackground 2s ease-in-out infinite;
+  }
+
+  .content {
+    padding: 2em 3em 3em 5em;
+    animation: fadein 1.35s;
+    -moz-animation: fadein 1.35s; /* Firefox */
+    -webkit-animation: fadein 1.35s; /* Safari and Chrome */
+    -o-animation: fadein 1.35s; /* Opera */
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes mobileBackground {
+  0%, 100% {
+    background-position: 50% 25%;
+  } 50% {
+    background-position: 50% 30%;
+  }
 }
 
 @keyframes animatedBackground {
   0%, 100% {
-    background-position: 83% 45%;
+    background-position: 80% 25%;
   } 50% {
-    background-position: 83% 50%;
+    background-position: 80% 30%;
   }
 }
 
@@ -94,6 +131,7 @@ b {
 }
 
 #projects {
+  font-size: 0.9rem;
   flex: 1;
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -112,13 +150,14 @@ b {
 .entry {
   flex: 1;
   flex-basis: 40%;
-  height: 150px;
+  height: 200px;
   padding: 1.4em 1.75em;
   margin: 1.5em;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   transition: box-shadow 0.15s ease-in-out, transform 0.3s ease-in;
+  overflow: hidden;
 }
 
 .entry:hover {
@@ -161,4 +200,13 @@ ul {
 .contact-entry {
   flex: 1;
   text-align: center;
+}
+
+.project-button {
+  color: black;
+  text-decoration: none;
+}
+
+.thumbnail {
+  height: 10%;
 }
