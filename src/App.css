@@ -29,7 +29,7 @@ b {
 }
 
 .content {
-  width: 55%;
+  width: 60%;
   padding: 2em 3em 3em 5em;
   animation: fadein 1.35s;
   -moz-animation: fadein 1.35s; /* Firefox */
@@ -86,18 +86,25 @@ b {
 
 @media (max-width: 400px) {
   #about {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
     flex: 3;
     height: 100vh;
     position: relative;
     /* background-color: #fdf4d6; */
     background-image: url(./images/cat_balloon.png);
-    background-size: 30% auto;
+    background-size: 35% auto;
     background-repeat: no-repeat;
-    animation: animatedBackground 2s ease-in-out infinite;
+    animation: mobileBackground 2s ease-in-out infinite;
+  }
+
+  .vertical-align {
+    position: relative;
+    top: 15%;
+    text-align: center;
   }
 
   .content {
+    width: auto;
     padding: 2em 3em 3em 5em;
     animation: fadein 1.35s;
     -moz-animation: fadein 1.35s; /* Firefox */
@@ -109,9 +116,9 @@ b {
 
 @keyframes mobileBackground {
   0%, 100% {
-    background-position: 50% 25%;
+    background-position: 30% 70%;
   } 50% {
-    background-position: 50% 30%;
+    background-position: 30% 73%;
   }
 }
 
@@ -131,7 +138,7 @@ b {
 }
 
 #projects {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   flex: 1;
   background-color: rgba(0, 0, 0, 0.05);
 }
