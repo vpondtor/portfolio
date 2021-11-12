@@ -38,6 +38,13 @@ b {
   animation-timing-function: ease-in;
 }
 
+.section_title {
+  padding: 0.75em 0em 0em 1.5em;
+  font-size: 1.85em;
+  font-weight: 500;
+  color: rgba(121,186,255,255);
+}
+
 @keyframes fadein {
   from {
       opacity:0;
@@ -82,36 +89,6 @@ b {
   background-size: 20% auto;
   background-repeat: no-repeat;
   animation: animatedBackground 2s ease-in-out infinite;
-}
-
-@media (max-width: 400px) {
-  #about {
-    font-size: 1.8vw;
-    flex: 3;
-    height: 100vh;
-    position: relative;
-    /* background-color: #fdf4d6; */
-    background-image: url(./images/cat_balloon.png);
-    background-size: 35% auto;
-    background-repeat: no-repeat;
-    animation: mobileBackground 2s ease-in-out infinite;
-  }
-
-  .vertical-align {
-    position: relative;
-    top: 15%;
-    text-align: center;
-  }
-
-  .content {
-    width: auto;
-    padding: 2em 3em 3em 5em;
-    animation: fadein 1.35s;
-    -moz-animation: fadein 1.35s; /* Firefox */
-    -webkit-animation: fadein 1.35s; /* Safari and Chrome */
-    -o-animation: fadein 1.35s; /* Opera */
-    animation-timing-function: ease-in;
-  }
 }
 
 @keyframes mobileBackground {
@@ -182,13 +159,6 @@ ul {
   height: 150px;
 }
 
-.section_title {
-  padding: 0.75em 0em 0em 1.5em;
-  font-size: 1.85em;
-  font-weight: 500;
-  color: rgba(121,186,255,255);
-}
-
 .entry_header {
   font-size: 1.5em;
   font-weight: 500;
@@ -216,4 +186,59 @@ ul {
 
 .thumbnail {
   height: 10%;
+}
+
+@media (max-width: 400px) {
+  #about {
+    font-size: 1.8vw;
+    flex: 3;
+    height: 100vh;
+    position: relative;
+    /* background-color: #fdf4d6; */
+    background-image: url(./images/cat_balloon.png);
+    background-size: 35% auto;
+    background-repeat: no-repeat;
+    animation: mobileBackground 2s ease-in-out infinite;
+  }
+
+  .vertical-align {
+    position: relative;
+    top: 15%;
+    text-align: center;
+  }
+
+  .content {
+    width: auto;
+    padding: 2em 3em 3em 5em;
+    animation: fadein 1.35s;
+    -moz-animation: fadein 1.35s; /* Firefox */
+    -webkit-animation: fadein 1.35s; /* Safari and Chrome */
+    -o-animation: fadein 1.35s; /* Opera */
+    animation-timing-function: ease-in;
+  }
+
+  #entries {
+    padding: 0em 1em 1em 1em;
+  }
+
+  .section_title {
+    width: 75%;
+    padding: 1em 0em 0em 0em;
+    margin: 0 auto;
+    font-size: 1.85em;
+    font-weight: 500;
+    color: rgba(121,186,255,255);
+    text-align: center;
+  }
+
+  #projects {
+    font-size: 1.0rem;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .contact-container {
+    display: flex;
+    padding: 1em 10em;
+  }
 }
