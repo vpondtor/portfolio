@@ -17,6 +17,39 @@ function Featured(props) {
             </li>
             <li className="entry">
                 <a href="#" className="project-button">
+                <header className="entry_header">📅 Schedlr</header>
+                <ul className="bullets">
+                    <li>
+                        Schedule optimization tool to generate new schedule given a set of future tasks and current obligations. Integrated with Google APIs for secure login and Google Calendar access.
+                    </li>
+                </ul>
+                <Technologies items={["Java", "JavaScript", "React"]}></Technologies>
+                </a>
+            </li>
+            <li className="entry">
+            <a href="#" className="project-button">
+                <header className="entry_header">🛒 CartPole</header>
+                <ul className="bullets">
+                    <li>
+                        Implementation of a classic Reinforcement Learning Model in OpenAI Gym. Symbolizes my first experience with neural networks and a major milestone for me, despite being a simple model.
+                    </li>
+                </ul>
+                <Technologies items={["Python", "PyTorch"]}></Technologies>
+            </a>
+            </li>
+            <li className="entry">
+            <a href="#" className="project-button">
+                <header className="entry_header">🐚 Shell</header>
+                <ul className="bullets">
+                    <li>
+                        Bash shell imitation using C system commands. Supports basic commands, child processes, input/output redirects, signal forwarding, and background/foreground distinction.
+                    </li>
+                </ul>
+                <Technologies items={["C"]}></Technologies>
+            </a>
+            </li>
+            <li className="entry">
+                <a href="#" className="project-button">
                 <header className="entry_header">⏰ Divergence Meter</header>
                 <ul className="bullets">
                     <li>
@@ -36,39 +69,6 @@ function Featured(props) {
                 </ul>
                 <Technologies items={["JavaScript", "Raspberry Pi"]}></Technologies>
                 </a>
-            </li>
-            <li className="entry">
-                <a href="#" className="project-button">
-                <header className="entry_header">📅 Schedlr</header>
-                <ul className="bullets">
-                    <li>
-                        Schedule optimization tool to generate new schedule given a set of future tasks and current obligations. Integrated with Google APIs for secure login and Google Calendar access.
-                    </li>
-                </ul>
-                <Technologies items={["Java", "JavaScript", "React"]}></Technologies>
-                </a>
-            </li>
-            <li className="entry">
-            <a href="#" className="project-button">
-                <header className="entry_header">🐚 Shell</header>
-                <ul className="bullets">
-                    <li>
-                        Bash shell imitation using C system commands. Supports basic commands, child processes, input/output redirects, signal forwarding, and background/foreground distinction.
-                    </li>
-                </ul>
-                <Technologies items={["C"]}></Technologies>
-            </a>
-            </li>
-            <li className="entry">
-            <a href="#" className="project-button">
-                <header className="entry_header">🛒 CartPole</header>
-                <ul className="bullets">
-                    <li>
-                        Implementation of a classic Reinforcement Learning Model in OpenAI Gym. Symbolizes my first experience with neural networks and a major milestone for me, despite being a simple model.
-                    </li>
-                </ul>
-                <Technologies items={["Python", "PyTorch"]}></Technologies>
-            </a>
             </li>
         </ul>
     </div>
