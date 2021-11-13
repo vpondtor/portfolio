@@ -116,7 +116,7 @@ b {
 }
 
 #projects {
-  font-size: 1.05rem;
+  font-size: 1.00rem;
   flex: 1;
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -135,7 +135,7 @@ b {
 .entry {
   flex: 1;
   flex-basis: 40%;
-  height: 200px;
+  height: 270px;
   padding: 1em 1.75em 1.4em 1.75em;
   margin: 1.5em;
   background-color: white;
@@ -147,7 +147,8 @@ b {
 
 .entry:hover {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
-  transform: scale(1.006);
+  /* transform: scale(1.006); */
+  transform: perspective(1px) scale(1.007)
 }
 
 ul {
@@ -155,6 +156,8 @@ ul {
 }
 
 .bullets {
+  position: relative;
+  height: 75%;
   padding: 1em 0em;
 }
 
@@ -186,6 +189,8 @@ ul {
 }
 
 .project-button {
+  position: relative;
+  height: 100%;
   color: black;
   text-decoration: none;
 }
@@ -194,7 +199,29 @@ ul {
   height: 10%;
 }
 
-@media (max-width: 400px) {
+.technologies {
+  position: relative;
+  bottom: 0%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: end;
+  gap: 0.5em;
+}
+
+.skill {
+  color: rgba(255, 255, 255, 255);
+  font-size: 0.7rem;
+  width: 5rem;
+  /* background-color: rgba(157, 255, 123, 255); */
+  /* background-color: rgba(132, 223, 100 , 255); */
+  background-color: rgba(111, 221, 74, 255);
+  padding: 0.3em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
   #about {
     font-size: 1.8vw;
     flex: 3;
@@ -225,6 +252,13 @@ ul {
 
   #entries {
     padding: 0em 1em 1em 1em;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
   }
 
   .section_title {
@@ -233,12 +267,12 @@ ul {
     margin: 0 auto;
     font-size: 1.85em;
     font-weight: 500;
-    color: rgba(121,186,255,255);
-    text-align: center;
+    color: rgba(82, 165, 255, 255);
+    text-align: Left;
   }
 
   #projects {
-    font-size: 1.0rem;
+    font-size: 1rem;
     flex: 1;
     background-color: rgba(0, 0, 0, 0.05);
   }
@@ -246,5 +280,25 @@ ul {
   .contact-container {
     display: flex;
     padding: 1em 10em;
+  }
+
+  .entry_header {
+    font-size: 1.15rem;
+    font-weight: 500;
+    /* color: rgba(121,186,255,255); */
+    color: rgba(82, 165, 255, 255);
+  }
+
+  .entry {
+    flex: 1;
+    flex-basis: 50%;
+    height: 330px;
+    padding: 1em 1.75em 1.4em 1.75em;
+    margin: 1.5em;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.15s ease-in-out, transform 0.3s ease-in;
+    overflow: hidden;
   }
 }
