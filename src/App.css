@@ -130,6 +130,7 @@ b {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: stretch;
+  max-width: 1200px;
 }
 
 .entry {

@@ -2,7 +2,7 @@ import Technologies from "./Technologies"
 
 function Featured(props) {
     return <div id="projects">
-        <header className= "section_title">-- Latest Projects --</header>
+        <header className= "section_title">// Latest Projects</header>
         <ul id="entries">
             <li className="entry">
             <a href="/resources/Super_Mario_DQN.pdf" target="_blank" className="project-button">

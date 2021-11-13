@@ -1,6 +1,6 @@
 function Contact(props) {
     return <div id="contact">
-        <header className="section_title">-- Contact --</header>
+        <header className="section_title">// Contact</header>
         <ul className="contact-container">
             <li className="contact-entry">
                 <a href="https://github.com/vpondtor" target="_blank">
