@@ -64,7 +64,7 @@ function Featured(props) {
                 <header className="entry_header">🛒 CartPole</header>
                 <ul className="bullets">
                     <li>
-                        Implementation of a classic Reinforcement Learning Model in OpenAI Gym. Symbolizes my first experience with networks and a major milestone for me, despite being a simple model.
+                        Implementation of a classic Reinforcement Learning Model in OpenAI Gym. Symbolizes my first experience with neural networks and a major milestone for me, despite being a simple model.
                     </li>
                 </ul>
                 <Technologies items={["Python", "PyTorch"]}></Technologies>
