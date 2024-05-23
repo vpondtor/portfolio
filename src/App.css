@@ -144,12 +144,35 @@ b {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   transition: box-shadow 0.15s ease-in-out, transform 0.3s ease-in;
   overflow: hidden;
+  position: relative;
 }
 
 .entry:hover {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
   /* transform: scale(1.006); */
   transform: perspective(1px) scale(1.007)
+}
+
+.hide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 8%;
+  width: 100%;
+  color: white;
+  background-color: rgba(82, 165, 255, 255);
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
+  text-align: center;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.entry:hover .hide {
+  transform: translateY(0);
 }
 
 ul {

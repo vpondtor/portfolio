@@ -4,7 +4,7 @@ function Featured(props) {
     return <div id="projects">
         <header className= "section_title">// Latest Projects</header>
         <ul id="entries">
-        <li className="entry">
+            <li className="entry">
                 <a href="https://warcraftrumble.blizzard.com/en-us/" target="_blank" className="project-button">
                 <header className="entry_header">🐔 Warcraft Rumble</header>
                 <ul className="bullets">
@@ -14,6 +14,7 @@ function Featured(props) {
                 </ul>
                 <Technologies items={["C#", "GCP", "Kubernetes", "Kafka"]}></Technologies>
                 </a>
+                <div className="hide">Learn More</div>
             </li>
             <li className="entry">
             <a href="https://github.com/brown-cs1690/handout/wiki" target="_blank" className="project-button">
@@ -25,6 +26,7 @@ function Featured(props) {
                 </ul>
                 <Technologies items={["C"]}></Technologies>
             </a>
+            <div className="hide">Learn More</div>
             </li>
             <li className="entry">
             <a href="https://www.youtube.com/watch?v=sb18Sy7xzC8" target="_blank" className="project-button">
@@ -36,6 +38,7 @@ function Featured(props) {
                 </ul>
                 <Technologies items={["C++"]}></Technologies>
             </a>
+            <div className="hide">Learn More</div>
             </li>
             <li className="entry">
             <a href="/resources/Super_Mario_DQN.pdf" target="_blank" className="project-button">
@@ -47,6 +50,7 @@ function Featured(props) {
                 </ul>
                 <Technologies items={["Python", "PyTorch"]}></Technologies>
             </a>
+            <div className="hide">Learn More</div>
             </li>
             <li className="entry">
                 <a href="#" className="project-button">
@@ -58,6 +62,7 @@ function Featured(props) {
                 </ul>
                 <Technologies items={["Java", "JavaScript", "React"]}></Technologies>
                 </a>
+                {/* <div className="hide">See More</div> */}
             </li>
             <li className="entry">
                 <a href="#" className="project-button">
@@ -69,6 +74,7 @@ function Featured(props) {
                 </ul>
                 <Technologies items={["JavaScript", "Raspberry Pi"]}></Technologies>
                 </a>
+                {/* <div className="hide">See More</div> */}
             </li>
         </ul>
     </div>
